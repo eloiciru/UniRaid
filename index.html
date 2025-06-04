@@ -1,0 +1,208 @@
+<!DOCTYPE html> 
+<html lang="ca">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Porta'ns al UniRaid!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Montserrat:wght@400;600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: #fdfaf6;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      font-size: 1.2rem;
+    }
+    header {
+      background: linear-gradient(90deg, #ff5722, #ff9800);
+      color: white;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3.5rem;
+      font-family: 'Russo One', sans-serif;
+    }
+    header p {
+      font-size: 1.5rem;
+      margin-top: 0.5rem;
+    }
+    nav {
+      background: #ffffff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 1rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #ff5722;
+      font-weight: 600;
+      cursor: pointer;
+      font-size: 1.2rem;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #e64a19;
+    }
+    main {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    section {
+      display: none;
+    }
+    section.active {
+      display: block;
+    }
+    section h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+    section ul {
+      padding-left: 1.5rem;
+    }
+    .button-copy {
+      background: #ff5722;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+    .copy-message {
+      display: none;
+      color: green;
+      margin-top: 0.5rem;
+    }
+    img.hero-image {
+      width: 100%;
+      max-width: 800px;
+      display: block;
+      margin: 1.5rem auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    footer {
+      background: #1e1e1e;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Porta'ns al UniRaid! 🏜️🚗</h1>
+    <p>Una aventura solidària, tècnica i humana pel desert del Marroc 🌍</p>
+  </header>
+
+  <nav>
+    <a onclick="showTab('inici')">🏠 Inici</a>
+    <a onclick="showTab('vehicle')">🚘 El vehicle</a>
+    <a onclick="showTab('reforma')">🔧 Reforma</a>
+    <a onclick="showTab('colabora')">🤝 Com col·laborar</a>
+    <a onclick="showTab('contacte')">📬 Contacte</a>
+  </nav>
+
+  <main>
+    <section id="inici" class="active">
+      <h2>👋 BENVINGUDES I BENVINGUTS A TOTS!</h2>
+
+      <img src="20250605_0019_Seat Panda en Dakar_simple_compose_01jwygbsdgfg9bc2xnncwzwyn9.png" alt="Seat Panda al Dakar" class="hero-image" />
+
+      <p>Som un equip d'estudiants d'Enginyeria Industrial amb un somni: participar al UniRaid. Però no de qualsevol manera, no volem viure aquesta aventura 
+        comprant un vehicle a cop de talonari, sinó que volem posar sobre la taula i demostrar que la nostra carrera és més que calcular quatre números i fer 
+        integrals, ens ensenya a improvitzar, trobar solucions als problemes que se'ns posin per davant i aprendre com funciona un cotxe.</p>
+    </section>
+
+    <section id="vehicle">
+      <h2>🚗 El vehicle</h2>
+      <p>La competició posa tan sols dues condicions que s'han de cumplir pel vehicle que decidim portar en aquesta aventura:</p>
+      <ul>
+        <li>1️⃣ El cotxe ha de ser de tracció únicament a dues rodes.</li>
+        <li>2️⃣ El cotxe ha de tenir una edat mínima de 15 anys.</li>
+      </ul>
+      <p>Per a dos penjats com nosaltres això és massa senzill i, com hem mencionat, volem un repte: buscarem un cotxe que sigui almenys més «major» d'edat als Estats Units d'Amèrica😉</p>
+      <p>A més, volem que no estigui en el millor estat per poder-li fer una bona reforma i donar-li un toc personal.</p>
+    </section>
+
+    <section id="reforma">
+      <h2>🛠️ Reforma del vehicle</h2>
+      <p>Planifiquem adaptar el vehicle amb:</p>
+      <ul>
+        <li>🔩 Suspensió reforçada.</li>
+        <li>⚙️ Revisió completa del motor.</li>
+        <li>🛡️ Sistemes de seguretat addicionals.</li>
+        <li>📦 Espai per transportar material solidari.</li>
+      </ul>
+    </section>
+
+    <section id="colabora">
+      <h2>🤲 Com col·laborar</h2>
+      <p>Aquest projecte no és precisament econòmic, i menys encara sent estudiants, cosa que no sol ser símbol de gaires fonts d'ingressos. És per aquest motiu que hem decidit de 
+        formar aquesta web per aconseguir el suport que necessitem per fer possible aquest projecte.</p>
+      <p>Ara bé, demanar col·laboració i no retornar-vos el favor de cap manera és fred i quasi que trist, així que us presentem el nostre ventall de col·laboracions:</p>
+      <ul>
+        <li><strong>🎯 Compra un quilòmetre:</strong> 1 €</li>
+        <li><strong>🏁 Compra un centenar:</strong> 10 €</li>
+        <li><strong>🎖️ Compra un miler:</strong> 100 €</li>
+      </ul>
+      <p>Per qualsevol d'aquestes compres s'enviarà un certificat on constarà el nom de la persona que ha comprat qualsevol dels 3 productes i es comprarà una enganxina amb el
+        número corresponent de compra i s'enganxarà en el vehicle perquè ens acompany durant tota l'aventura.</p>
+      <p>Altres opcions:</p>
+      <ul>
+        <li>🔧 Compra directa de peces del cotxe i menció com a patrocinador.</li>
+        <li>⛽ Compra de bidons de gasolina i agraïment amb un vídeo des del Marroc.</li>
+        <li>🎁 Donacions de 20 € o més i recepció d'una maqueta petita del vehicle.</li>
+      </ul>
+
+      <button class="button-copy" onclick="copyBizum()">📲 Fes una donació per Bizum</button>
+      <div id="copyMessage" class="copy-message">✅ Número de telèfon copiat al porta-retalls!</div>
+    </section>
+
+    <section id="contacte">
+      <h2>📨 Contacte</h2>
+      <p>Si tens qualsevol dubte o vols fer una aportació directa, pots contactar-nos a:</p>
+      <ul>
+        <li>📧 Correu electrònic: <a href="mailto:uniraid.equip@gmail.com">uniraid.equip@gmail.com</a></li>
+        <li>📸 Instagram: <a href="https://www.instagram.com/uniraid_equip" target="_blank">@uniraid_equip</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Equip UniRaid | Projecte universitari solidari ✨</p>
+  </footer>
+
+  <script>
+    function showTab(id) {
+      document.querySelectorAll('section').forEach(section => {
+        section.classList.remove('active');
+      });
+      document.getElementById(id).classList.add('active');
+    }
+
+    function copyBizum() {
+      const phoneNumber = "628937778"; // Substitueix pel teu número real
+      navigator.clipboard.writeText(phoneNumber).then(() => {
+        document.getElementById("copyMessage").style.display = "block";
+        setTimeout(() => {
+          document.getElementById("copyMessage").style.display = "none";
+        }, 3000);
+      });
+    }
+  </script>
+</body>
+</html>
+
